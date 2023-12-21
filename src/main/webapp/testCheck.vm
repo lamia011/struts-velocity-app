@@ -4,5 +4,6 @@
 </head>
     <body>
     Hello,${name}
+    <p>Check: $esc.javascript($name)</p>
     </body>
 </html>

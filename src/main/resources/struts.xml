@@ -10,10 +10,10 @@
             <result>/index.jsp</result>
 	</action>-->
 
-	<package name="struts_example" extends="struts-default">
+	<package name="struts_example" extends="struts-default,velocity-default">
 
 		<action name="test" class="struts_example.TestAction">
-			<result name="success">/testCheck.vm</result>
+			<result name="success" type="velocity">/testCheck.vm</result>
 		</action>
 	</package>
 

@@ -3,8 +3,8 @@
 <struts>
 
 	<constant name="struts.devMode" value="true" />
-	 <constant name="struts.velocity.toolboxlocation"
-                 value="/WEB-INF/toolbox.xml" />
+	 <!--<constant name="struts.velocity.toolboxlocation"
+                 value="/toolbox.xml" />-->
 
 	<package name="struts_example" extends="struts-default,velocity-default">
 

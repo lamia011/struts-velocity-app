@@ -3,6 +3,7 @@
 <struts>
 
 	<constant name="struts.devMode" value="true" />
+	<constant name="struts.velocity.toolboxlocation" value="/org/apache/velocity/tools/generic/tools.xml" />
 	 <!--<constant name="struts.velocity.toolboxlocation"
                  value="/toolbox.xml" />-->
 

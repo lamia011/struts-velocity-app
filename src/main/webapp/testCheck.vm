@@ -5,5 +5,11 @@
     <body>
     Hello,${name}
     <p>Check: $esc.javascript($name)</p>
+##    <p id="here"></p>
+    <p id="there"></p>
+    <script type="text/javascript">
+        ## document.getElementById("here").innerHTML = "$escapeMe";
+        document.getElementById("there").innerHTML = "$esc.javascript($escapeMe)";
+    </script>
     </body>
 </html>

@@ -15,6 +15,10 @@ public class TestAction extends ActionSupport {
 		this.name = name;
 	}
 
+	public String getEscapeMe() {
+		return "\"; alert('I was not escaped !!'); var a = \"";
+	}
+
 	@Override
 	public String execute() throws Exception {
 		name = "TEST";

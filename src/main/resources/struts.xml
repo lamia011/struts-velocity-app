@@ -6,10 +6,16 @@
 	 <!--<constant name="struts.velocity.toolboxlocation"
                  value="/toolbox.xml" />-->
 
-	<package name="struts_example" extends="struts-default,velocity-default">
+	<package name="custom" extends="struts-default">
+		<result-types>
+			<result-type name="customVelocity" class="struts_example.CustomVelocityResult"/>
+		</result-types>
+	</package>
+
+	<package name="struts_example" extends="custom">
 
 		<action name="test" class="struts_example.TestAction">
-			<result name="success" type="velocity">/testCheck.vm</result>
+			<result name="success" type="customVelocity">/testCheck.vm</result>
 		</action>
 	</package>
 
